@@ -108,22 +108,6 @@ exports.default = Detector;
 },{}],3:[function(require,module,exports){
 'use strict';
 
-var _smartbanner = require('./smartbanner.js');
-
-var _smartbanner2 = _interopRequireDefault(_smartbanner);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var smartbanner = void 0;
-
-window.addEventListener('load', function () {
-  smartbanner = new _smartbanner2.default();
-  smartbanner.publish();
-});
-
-},{"./smartbanner.js":7}],4:[function(require,module,exports){
-'use strict';
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -182,7 +166,7 @@ var OptionParser = function () {
 
 exports.default = OptionParser;
 
-},{"./polyfills/array/from.js":5,"./polyfills/array/includes.js":6}],5:[function(require,module,exports){
+},{"./polyfills/array/from.js":4,"./polyfills/array/includes.js":5}],4:[function(require,module,exports){
 'use strict';
 
 // Production steps of ECMA-262, Edition 6, 22.1.2.1
@@ -268,7 +252,7 @@ if (!Array.from) {
   }();
 }
 
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 if (!Array.prototype.includes) {
@@ -307,7 +291,7 @@ if (!Array.prototype.includes) {
   };
 }
 
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -548,4 +532,4 @@ var SmartBanner = function () {
 
 exports.default = SmartBanner;
 
-},{"./bakery.js":1,"./detector.js":2,"./optionparser.js":4}]},{},[3]);
+},{"./bakery.js":1,"./detector.js":2,"./optionparser.js":3}]},{},[6]);

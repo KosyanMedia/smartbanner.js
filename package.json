@@ -35,7 +35,7 @@
   "scripts": {
     "install-deps": "npm install && bundle install",
     "bannerise": "add-banner --template=banner.tmpl dist/*.*s",
-    "browserify": "browserify src/index.js -o dist/smartbanner.js -t [ babelify --presets [ es2015 ] ]",
+    "browserify": "browserify src/smartbanner.js -o dist/smartbanner.js -t [ babelify --presets [ es2015 ] ]",
     "uglify": "uglifyjs dist/smartbanner.js -o dist/smartbanner.min.js",
     "eslint": "eslint src/*.js",
     "scsslint": "scss-lint src/smartbanner.scss",
